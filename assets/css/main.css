@@ -796,6 +796,7 @@ body {
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
+  border: 5px solid #555;
 }
 .work--lockup .slider--item-image img {
   width: 100%;
@@ -820,7 +821,7 @@ body {
   display: block;
 }
 .work--lockup .slider--item-center a {
-  color: #fff;
+  color: #282828;
 }
 .work--lockup .slider--item-center .slider--item-title {
   margin-top: 25px;
@@ -947,7 +948,7 @@ body {
 .about--banner h2::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 10px;
   left: 268px;
   width: 30px;
   height: 30px;
@@ -997,7 +998,7 @@ body {
 .about--options > a {
   position: relative;
   width: 150px;
-  height: 75px;
+  height: 95px;
   text-decoration: none;
   color: #fff;
   border: 10px solid #ec9f06;
@@ -1006,7 +1007,7 @@ body {
   background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-  background-image: url("../img/about-winners.jpg");
+  background-image: url("../img/CodeOut.png");
 }
 .about--options > a:nth-child(2) {
   background-image: url("../img/about-philosophy.jpg");
@@ -1015,11 +1016,11 @@ body {
   background-image: url("../img/about-history.jpg");
 }
 .about--options > a:hover h3 {
-  bottom: -50px;
+  bottom: -8px;
 }
 .about--options h3 {
   position: absolute;
-  bottom: -38px;
+  bottom: -2px;
   left: 10px;
   font-size: 16px;
   text-transform: uppercase;
