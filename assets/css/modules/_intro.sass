@@ -13,13 +13,17 @@
 
   &--banner
     position: relative
-    height: 475px
+    height: 375px
+
+    &--flex
+      max-width: 200px
+
 
     &::before
       content: ""
       position: absolute
       bottom: 20px
-      left: -15px
+      left: 0px
       right: 0
       height: 2px
       background-color: $muted-gray
@@ -29,16 +33,19 @@
       position: absolute
       bottom: 18px
       left: 0
-      width: 30px
-      height: 4px
+      width: 100px
+      height: 5px
       background-color: $highlight
 
     h1
       position: relative
-      font-size: 68px
-      font-weight: 900
+      display: inline
+      top: 90px
+      font-size: 62px
+      font-weight: 800
       line-height: 1
       z-index: 1
+
 
     button
       position: relative
@@ -73,8 +80,21 @@
 
     img
       position: absolute
-      bottom: 21px
-      right: -12px
+      bottom: 100px
+      right: 20px
+      border-radius: 50%
+      border: 5px solid #555
+      max-width: 200px
+      max-height: 200px
+
+    .blink
+      animation: blink 0.4s infinite
+
+    @keyframes blink
+      0%
+        opacity: 0
+      100%
+        opacity: 100
 
   &--options
     display: flex
@@ -84,13 +104,13 @@
     list-style: none
 
     & > a
-      max-width: 250px
+      max-width: 150px
       text-decoration: none
       color: $muted-gray
       transition: color .2s ease-in-out
 
       &:hover
-        color: $white
+        color: $muted-gray
 
     h3
       font-size: 16px
@@ -110,7 +130,7 @@
         font-size: 55px
 
       img
-        width: 430px
+        width: 200px
 
     &--options
 
@@ -149,7 +169,7 @@
   .intro
 
     &--banner
-      height: 360px
+      height: 460px
 
       h1
         font-size: 55px

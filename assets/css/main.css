@@ -269,11 +269,11 @@ body {
 }
 
 body {
-  background-color: #0c0c0c;
+  background-color: #fff;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #0c0c0c;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -345,14 +345,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0c0c0c;
+  background-color: #fff;
   z-index: 12;
 }
 .device-notification--logo {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: #0c0c0c;
 }
 .device-notification--logo p {
   margin: 0 0 0 10px;
@@ -422,13 +422,13 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
 }
 .header--logo p {
   margin: 0 0 0 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #0c0c0c;
 }
 .header--nav-toggle {
   display: flex;
@@ -462,7 +462,7 @@ body {
   padding: 0 20px;
   line-height: 30px;
   text-decoration: none;
-  color: #fff;
+  color: #0c0c0c;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #ec9f06;
@@ -501,16 +501,16 @@ body {
 .side-nav > li {
   position: relative;
   top: -5px;
-  color: #fff;
-  font-size: 6px;
+  color: #0c0c0c;
+  font-size: 12px;
   cursor: pointer;
 }
 .side-nav > li span {
   position: relative;
   top: 3px;
   left: 10px;
-  color: #fff;
-  font-size: 14px;
+  color: #0c0c0c;
+  font-size: 12px;
   font-weight: 300;
   opacity: 0;
   visibility: hidden;
@@ -549,7 +549,7 @@ body {
 }
 .side-nav li.is-active::before {
   left: -33px;
-  color: #fff;
+  color: #0c0c0c;
 }
 
 .intro {
@@ -569,13 +569,16 @@ body {
 }
 .intro--banner {
   position: relative;
-  height: 475px;
+  height: 375px;
+}
+.intro--banner--flex {
+  max-width: 200px;
 }
 .intro--banner::before {
   content: "";
   position: absolute;
   bottom: 20px;
-  left: -15px;
+  left: 0px;
   right: 0;
   height: 2px;
   background-color: #282828;
@@ -585,14 +588,16 @@ body {
   position: absolute;
   bottom: 18px;
   left: 0;
-  width: 30px;
-  height: 4px;
+  width: 100px;
+  height: 5px;
   background-color: #ec9f06;
 }
 .intro--banner h1 {
   position: relative;
-  font-size: 68px;
-  font-weight: 900;
+  display: inline;
+  top: 90px;
+  font-size: 62px;
+  font-weight: 800;
   line-height: 1;
   z-index: 1;
 }
@@ -628,8 +633,23 @@ body {
 }
 .intro--banner img {
   position: absolute;
-  bottom: 21px;
-  right: -12px;
+  bottom: 100px;
+  right: 20px;
+  border-radius: 50%;
+  border: 5px solid #555;
+  max-width: 200px;
+  max-height: 200px;
+}
+.intro--banner .blink {
+  animation: blink 0.4s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 .intro--options {
   display: flex;
@@ -639,13 +659,13 @@ body {
   list-style: none;
 }
 .intro--options > a {
-  max-width: 250px;
+  max-width: 150px;
   text-decoration: none;
   color: #282828;
   transition: color 0.2s ease-in-out;
 }
 .intro--options > a:hover {
-  color: #fff;
+  color: #282828;
 }
 .intro--options h3 {
   font-size: 16px;
@@ -663,7 +683,7 @@ body {
     font-size: 55px;
   }
   .intro--banner img {
-    width: 430px;
+    width: 200px;
   }
   .intro--options > a {
     margin-right: 30px;
@@ -696,7 +716,7 @@ body {
 }
 @media (max-width: 600px) {
   .intro--banner {
-    height: 360px;
+    height: 460px;
   }
   .intro--banner h1 {
     font-size: 55px;
@@ -946,7 +966,7 @@ body {
 .about--banner a {
   padding: 5px 17px 5px 0;
   text-decoration: none;
-  color: #fff;
+  color: #0c0c0c;
   font-weight: 700;
   text-transform: uppercase;
   background-color: transparent;
