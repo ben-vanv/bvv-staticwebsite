@@ -36,5 +36,4 @@ function deletingEffect() {
     };
     loopDeleting();
 };
-
 typingEffect();
