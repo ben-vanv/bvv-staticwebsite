@@ -1,4 +1,4 @@
-const words = ["Product Leadership", "Enterprise Transformation", "AWS", "Python-3", "IIoT","DevOps","Executive Wrangling","Mining", "Oil and Gas", "Enterprise Architecture","Serverless"];
+const words = ["Product Leadership", "Enterprise Transformation", "AWS", "Cloud Native", "Python-3", "IIoT","DevOps","Executive Wrangling","Mining", "Oil and Gas", "Enterprise Architecture","Serverless", "Infrastructure as Code"];
 let i = 0;
 let timer;
 
