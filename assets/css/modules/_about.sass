@@ -15,52 +15,83 @@
     position: relative
     height: 475px
 
-    &::before
-      content: ""
-      position: absolute
-      top: 20px
-      left: 200px
-      transform: rotate(-25deg)
-      border: 5px solid $highlight
-      border-right-color: transparent
-      border-bottom-color: transparent
+    //&::before
+    //  content: ""
+    //  position: absolute
+    //  top: 20px
+    //  left: 200px
+    //  transform: rotate(-25deg)
+    //  border: 5px solid $highlight
+    //  border-right-color: transparent
+    //  border-bottom-color: transparent
 
-    &::after
-      content: ""
-      position: absolute
-      top: 75px
-      left: 400px
-      transform: rotate(45deg)
-      width: 10px
-      height: 10px
-      background-color: $highlight
+    //&::after
+    //  content: ""
+    //  position: absolute
+    //  top: 75px
+    //  left: 400px
+    //  transform: rotate(45deg)
+    //  width: 10px
+    //  height: 10px
+    //  background-color: $highlight
+
+    .neumorphism
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 160px
+        width: 160px
+
+        border-radius: 50%
+        box-shadow: -3px -3px 7px #ffffffa6, 3px 3px 5px rgba(94, 104, 121, 0.712)
+        position: relative
+
+        &::after
+          content: ''
+          position: absolute
+          height: 80%
+          width: 80%
+          background-color: transparent
+          border-radius: 50%
+          box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.671)
+
+        &:nth-child(2)
+          left: 260px
+          background-color: #ccc
+
+        &:nth-child(3)
+          left: 40px
+          height: 220px
+          width: 220px
 
     h2
-      position: relative
-      margin-top: 35px
+      position: absolute
+      top: 0
+      left: 50px
+      top: 0px
       font-size: 68px
       font-weight: 900
       line-height: 1
       z-index: 1
 
-      &::before
-        content: ""
-        position: absolute
-        top: 10px
-        left: 268px
-        width: 30px
-        height: 30px
-        background-color: $highlight
-        border-radius: 50%
+      //&::before
+      //  content: ""
+      //  position: absolute
+      //  top: 10px
+      //  left: 268px
+      //  width: 30px
+      //  height: 30px
+      //  background-color: $highlight
+      //  border-radius: 50%
 
-      &::after
-        content: ""
-        position: absolute
-        top: 255px
-        left: 255px
-        width: 10px
-        height: 10px
-        background-color: $highlight
+      //&::after
+      //  content: ""
+      //  position: absolute
+      //  top: 255px
+      //  left: 255px
+      //  width: 10px
+      //  height: 10px
+      //  background-color: $highlight
 
     a
       padding: 5px 17px 5px 0
@@ -96,11 +127,14 @@
 
     & > a
       position: relative
-      width: 150px
-      height: 95px
+      width: 280px
+      height: 160px
       text-decoration: none
       color: $white
-      border: 10px solid $highlight
+
+      //border: 10px solid $highlight
+      border: 6px solid #cecece
+      box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945)
       background:
         position: center
         size: cover
@@ -118,6 +152,7 @@
       &:hover
         h3
           bottom: -8px
+        color: $highlight
 
     h3
       position: absolute
@@ -185,5 +220,8 @@
       img
         display: none
 
-    &--options
+      .neumorphism
       display: none
+
+    //&--options
+    //  display: none

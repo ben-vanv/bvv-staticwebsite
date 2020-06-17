@@ -11,6 +11,7 @@
   list-style-position: inside
   z-index: 10
 
+
   & > li
     position: relative
     top: -5px
@@ -60,15 +61,21 @@
 
     span
       color: $white
+      background-color: $muted-gray
+      box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945)
 
   li.is-active
     color: $highlight
     transition: color .4s ease-in-out
 
+
     span
       opacity: 1
       visibility: visible
       transition: opacity .4s ease-in-out
+      box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945)
+      border-radius: 2px
+      padding: 6px
 
 
     &::before

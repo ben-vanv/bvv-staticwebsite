@@ -28,21 +28,24 @@
       justify-content: left
 
     .modal
-      padding: 15px 45px
+      padding: 0 50px 22px 50px
       text-align: center
       background-color: $white
-      border: 8px solid $highlight
-      box-shadow: 0 0 20px 0 rgba(0,0,0,.75)
+      border: 6px solid $highlight
+      //box-shadow: 0 0 20px 0 rgba(0,0,0,.75)
+      box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945)
+      border-radius: 2px
 
       &--information
 
         p,
         a
           display: block
-          margin: 14px 0
+          margin: 10px 0
           text-decoration: none
           color: $black
           font-weight: 700
+
 
         p
           margin-top: 0
@@ -55,16 +58,19 @@
         & > li
           width: 230px
           margin: 0 auto 10px auto
+          box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945)
 
         li:nth-child(1)
-          background-color: $brown-gray
+          background-color: #ccc
+
 
         li:nth-child(2)
-          background-color: $bone
+          background-color: $muted-gray
+
 
         li:nth-child(3)
           margin-bottom: 0
-          background-color: $brown-gray
+          background-color: #ccc
 
         a
           display: block
