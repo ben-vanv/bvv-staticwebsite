@@ -733,28 +733,39 @@ body {
     margin-bottom: 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .intro--banner {
     height: 460px;
   }
   .intro--banner h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
   .intro--banner img {
     display: none;
   }
 }
-@media (max-width: 600px) and (max-height: 750px) {
+@media (max-width: 600px) and (max-height: 700px) {
   .intro--banner {
-    height: auto;
+    height: 40%;
   }
   .intro--banner::before, .intro--banner::after {
     display: none;
   }
   .intro--banner h1 {
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
   }
   .intro--options {
+    display: none;
+  }
+}
+@media (max-height: 600px) {
+  .intro h1 {
+    font-size: 25px;
+    display: none;
+  }
+  .intro img {
     display: none;
   }
 }
@@ -916,7 +927,7 @@ body {
     top: 105px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .work--lockup .slider {
     width: auto;
   }
@@ -975,7 +986,6 @@ body {
   position: absolute;
   top: 0;
   left: 50px;
-  top: 0px;
   font-size: 68px;
   font-weight: 900;
   line-height: 1;
@@ -1027,12 +1037,6 @@ body {
 .about--options > a:nth-child(1) {
   background-image: url("../img/CodeOut.png");
 }
-.about--options > a:nth-child(2) {
-  background-image: url("../img/about-philosophy.jpg");
-}
-.about--options > a:nth-child(3) {
-  background-image: url("../img/about-history.jpg");
-}
 .about--options > a:hover {
   color: #244652;
 }
@@ -1051,6 +1055,7 @@ body {
 @media (max-width: 767px) {
   .about--banner {
     height: 305px;
+    position: relative;
   }
   .about--banner::before {
     top: 0;
@@ -1076,30 +1081,25 @@ body {
     width: 315px;
   }
 }
-@media (max-width: 600px) {
-  .about--banner {
-    height: auto;
-    display: none;
-  }
-  .about--banner::before {
-    left: 155px;
-  }
-  .about--banner::after {
-    left: 310px;
-  }
+@media (max-width: 800px) and (max-height: 600px) {
   .about--banner h2 {
-    margin-top: 0;
-    font-size: 55px;
+    font-size: 35px;
   }
   .about--banner h2::before {
-    top: 43px;
+    top: 83px;
     left: 214px;
   }
   .about--banner h2::after {
     top: 205px;
     left: 205px;
   }
-  .about--banner img {
+
+  .neumorphism {
+    display: none;
+  }
+}
+@media (max-height: 400px) {
+  .about--banner {
     display: none;
   }
 }
@@ -1117,8 +1117,7 @@ body {
 .contact--lockup {
   position: relative;
   display: flex;
-  width: 900px;
-  max-width: 75%;
+  max-width: 45%;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -1126,7 +1125,7 @@ body {
 }
 @media (max-width: 1180px) {
   .contact--lockup {
-    max-width: 60%;
+    max-width: 65%;
   }
 }
 @media (max-width: 767px) {

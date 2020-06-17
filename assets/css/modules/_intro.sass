@@ -80,6 +80,7 @@
 
     img
       position: absolute
+
       bottom: 100px
       right: 20px
       border-radius: 50%
@@ -169,7 +170,7 @@
         &:last-child
           margin-bottom: 0
 
-@media (max-width: 600px)
+@media (max-width: 650px)
 
   .intro
 
@@ -177,17 +178,18 @@
       height: 460px
 
       h1
-        font-size: 55px
+        font-size: 45px
 
       img
         display: none
 
-@media (max-width: 600px) and (max-height: 750px)
+
+@media (max-width: 600px) and (max-height: 700px)
 
   .intro
 
     &--banner
-      height: auto
+      height: 40%
 
       &::before,
       &::after
@@ -196,7 +198,22 @@
 
       h1
         margin-top: 0
-
+        margin-bottom: 0
+        font-size: 25px
 
     &--options
+      display: none
+
+
+@media (max-height: 600px)
+
+  .intro
+    h1
+      font-size: 25px
+
+      &--options
+      display: none
+
+
+    img
       display: none
