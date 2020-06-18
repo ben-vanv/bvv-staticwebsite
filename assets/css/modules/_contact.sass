@@ -15,7 +15,7 @@
     position: relative
     display: flex
     //width: 900px
-    max-width: 45%
+    max-width: 55%
     height: 100%
     align-items: center
     justify-content: flex-end
@@ -28,6 +28,12 @@
     @media (max-width: 767px)
       justify-content: left
 
+    @media (max-width: 400px)
+      margin: 20px 20px
+      max-width: 90%
+
+
+
     .modal
       padding: 0 50px 22px 50px
       text-align: center
@@ -36,6 +42,10 @@
       //box-shadow: 0 0 20px 0 rgba(0,0,0,.75)
       box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945)
       border-radius: 2px
+
+      @media (max-width: 400px)
+        padding: 0 26px 22px 26px
+        width: 100%
 
       &--information
 
@@ -60,6 +70,9 @@
           width: 230px
           margin: 0 auto 10px auto
           box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945)
+
+          @media (max-width: 400px)
+            width: 200px
 
         li:nth-child(1)
           background-color: #ccc

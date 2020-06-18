@@ -744,12 +744,9 @@ body {
     display: none;
   }
 }
-@media (max-width: 600px) and (max-height: 700px) {
+@media (max-width: 600px) and (max-height: 780px) {
   .intro--banner {
     height: 40%;
-  }
-  .intro--banner::before, .intro--banner::after {
-    display: none;
   }
   .intro--banner h1 {
     margin-top: 0;
@@ -1018,7 +1015,7 @@ body {
   display: flex;
   max-width: 600px;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 50px;
   padding: 0;
   list-style: none;
 }
@@ -1081,7 +1078,7 @@ body {
     width: 315px;
   }
 }
-@media (max-width: 800px) and (max-height: 600px) {
+@media (max-width: 800px) and (max-height: 660px) {
   .about--banner h2 {
     font-size: 35px;
   }
@@ -1098,7 +1095,7 @@ body {
     display: none;
   }
 }
-@media (max-height: 400px) {
+@media (max-height: 580px) {
   .about--banner {
     display: none;
   }
@@ -1117,7 +1114,7 @@ body {
 .contact--lockup {
   position: relative;
   display: flex;
-  max-width: 45%;
+  max-width: 55%;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -1133,6 +1130,12 @@ body {
     justify-content: left;
   }
 }
+@media (max-width: 400px) {
+  .contact--lockup {
+    margin: 20px 20px;
+    max-width: 90%;
+  }
+}
 .contact--lockup .modal {
   padding: 0 50px 22px 50px;
   text-align: center;
@@ -1140,6 +1143,12 @@ body {
   border: 6px solid #244652;
   box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945);
   border-radius: 2px;
+}
+@media (max-width: 400px) {
+  .contact--lockup .modal {
+    padding: 0 26px 22px 26px;
+    width: 100%;
+  }
 }
 .contact--lockup .modal--information p,
 .contact--lockup .modal--information a {
@@ -1161,6 +1170,11 @@ body {
   width: 230px;
   margin: 0 auto 10px auto;
   box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+@media (max-width: 400px) {
+  .contact--lockup .modal--options > li {
+    width: 200px;
+  }
 }
 .contact--lockup .modal--options li:nth-child(1) {
   background-color: #ccc;
