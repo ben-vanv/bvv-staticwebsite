@@ -38,7 +38,7 @@
       padding: 0 50px 22px 50px
       text-align: center
       background-color: $white
-      border: 6px solid $highlight
+      border: 6px solid #cccccc
       //box-shadow: 0 0 20px 0 rgba(0,0,0,.75)
       box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945)
       border-radius: 2px
@@ -48,6 +48,8 @@
         width: 100%
 
       &--information
+        h1
+          color: $highlight
 
         p,
         a
@@ -76,6 +78,8 @@
 
         li:nth-child(1)
           background-color: #ccc
+          a
+            color: $highlight
 
 
         li:nth-child(2)
@@ -85,6 +89,8 @@
         li:nth-child(3)
           margin-bottom: 0
           background-color: #ccc
+          a
+            color: $highlight
 
         a
           display: block
