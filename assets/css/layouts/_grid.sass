@@ -36,6 +36,32 @@
   @media (max-width: 1180px)
     display: none
 
+@keyframes flickerAnimation
+  0%
+    opacity: 1
+  20%
+    opacity: 0.4
+  40%
+    opacity: 0.8
+  100%
+    opacity: 1
+
+
+.r-side-button
+  position: absolute
+  right: 6px
+  bottom: 6px
+  display: none
+  color: $highlight
+  user-select: none
+  font-size: 2em
+  //animation-iteration-count: infinite
+  animation: flickerAnimation 6s infinite
+
+  @media (max-width: 1180px)
+    display: inherit
+
+
 .l-main-content
   position: relative
   width: 100%

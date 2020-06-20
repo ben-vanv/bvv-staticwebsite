@@ -127,6 +127,14 @@
     .slider--prev
       left: 0
 
+@media (max-height: 600px)
+
+  .work
+    h2
+      display: none
+
+
+
 @media (max-width: 900px)
 
   .work
@@ -190,3 +198,64 @@
           &-left,
           &-right
             display: none
+
+@media (max-height: 500px)
+
+  .work
+
+    &--lockup
+
+      .slider
+
+
+        &--item
+
+
+          &-center
+            .slider--item-image
+              width: 200px
+              height: 200px
+
+            .slider--item-description
+              display: none
+
+          &-left, &-right
+            .slider--item-image
+              width: 100px
+              height: 100px
+
+
+@media (max-height: 340px)
+
+  .work
+
+    &--lockup
+
+        .slider
+
+          &--item
+
+
+            &-center
+                .slider--item-image
+                  width: 160px
+                  height: 160px
+
+                .slider--item-title
+                  margin-top: 6px
+                  font-size: 8px
+                  font-weight: 400
+
+            &-left, &-right
+                .slider--item-image
+                  width: 70px
+                  height: 70px
+
+                .slider--item-title
+                  margin-top: 4px
+                  font-size: 8px
+                  font-weight: 400
+
+        .slider--next,
+        .slider--prev
+          display: none

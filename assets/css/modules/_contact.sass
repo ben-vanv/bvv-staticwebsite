@@ -26,13 +26,18 @@
       max-width: 65%
 
     @media (max-width: 767px)
-      justify-content: left
+      //justify-content: left
 
-    @media (max-width: 400px)
+    @media (max-width: 700px)
       margin: 20px 20px
       max-width: 90%
+      justify-content: center
 
+    @media (max-height: 760px)
+      //justify-content: flex-start
 
+    @media (max-height: 360px)
+        height: 50%
 
     .modal
       padding: 0 50px 22px 50px
@@ -46,6 +51,8 @@
       @media (max-width: 400px)
         padding: 0 26px 22px 26px
         width: 100%
+
+
 
       &--information
         h1
@@ -63,18 +70,24 @@
         p
           margin-top: 0
 
+        h3
+          @media (max-height: 540px)
+            display: none
+
       &--options
         margin: 0
         padding: 0
         list-style: none
+
+
 
         & > li
           width: 230px
           margin: 0 auto 10px auto
           box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945)
 
-          @media (max-width: 400px)
-            width: 200px
+          @media (max-height: 640px)
+            margin: 0 auto 4px auto
 
         li:nth-child(1)
           background-color: #ccc
@@ -100,5 +113,17 @@
           color: $white
           font-weight: 700
 
+        @media (max-height: 760px)
+          font-size: 0
+
+        @media (max-height: 540px)
+          display: none
+
+
         img
           padding-top: 4px
+
+          @media (max-height: 640px)
+            max-height: 40px
+            max-width: 40px
+
