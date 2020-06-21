@@ -591,7 +591,7 @@ body {
 .side-nav li:nth-child(4).is-active span {
   color: #eaeaea;
   background-color: #282828;
-  box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945);
+  box-shadow: -3px -3px 7px #222, inset 3px 3px 5px rgba(20, 20, 20, 0.945);
 }
 .side-nav li.is-active {
   color: #244652;
@@ -601,7 +601,7 @@ body {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.4s ease-in-out;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+  box-shadow: -1px -1px 7px #dedede, inset 3px 3px 5px rgba(94, 104, 121, 0.945);
   border-radius: 2px;
   padding: 6px;
 }
@@ -698,7 +698,7 @@ body {
   border: 3px solid #bbb;
   max-width: 200px;
   max-height: 200px;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+  box-shadow: -3px -3px 7px #dedede, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 .intro--banner .blink {
   animation: blink 0.4s infinite;
@@ -712,8 +712,9 @@ body {
   }
 }
 .intro--text img {
-  height: 70px;
+  height: 82px;
   margin: 0 10px;
+  image-rendering: crisp-edges;
 }
 .intro--options {
   display: flex;
@@ -940,7 +941,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #ccc;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+  box-shadow: -3px -3px 7px #dedede, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 .work--lockup .slider--item-image img {
   width: 100%;
@@ -1111,7 +1112,7 @@ body {
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  box-shadow: -3px -3px 7px #ffffffa6, 3px 3px 5px rgba(94, 104, 121, 0.712);
+  box-shadow: -3px -3px 7px #fcfcfc, 3px 3px 5px rgba(94, 104, 121, 0.712);
   position: relative;
 }
 .about--banner .neumorphism::after {
@@ -1121,7 +1122,7 @@ body {
   width: 80%;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.671);
+  box-shadow: inset -3px -3px 7px #fcfcfc, inset 3px 3px 5px rgba(94, 104, 121, 0.671);
 }
 .about--banner .neumorphism:nth-child(2) {
   left: 260px;
@@ -1180,7 +1181,7 @@ body {
   text-decoration: none;
   color: #eaeaea;
   border: 6px solid #cecece;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.945);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1189,7 +1190,7 @@ body {
   background-image: url("../img/CodeOut.png");
 }
 .about--options > a:hover {
-  color: #244652;
+  color: #bbb;
 }
 .about--options > a:hover h3 {
   bottom: -8px;
@@ -1296,7 +1297,7 @@ body {
   text-align: center;
   background-color: #eaeaea;
   border: 6px solid #cccccc;
-  box-shadow: -3px -3px 7px #222, 3px 3px 5px rgba(20, 20, 20, 0.945);
+  box-shadow: -3px -3px 7px #333, 3px 3px 5px rgba(60, 60, 60, 0.945);
   border-radius: 2px;
 }
 @media (max-width: 400px) {
@@ -1332,7 +1333,7 @@ body {
 .contact--lockup .modal--options > li {
   width: 230px;
   margin: 0 auto 10px auto;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+  box-shadow: -3px -3px 7px #dedede, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 @media (max-height: 640px) {
   .contact--lockup .modal--options > li {
